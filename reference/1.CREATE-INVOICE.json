@@ -1,0 +1,54 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "1.CREATE INVOICE",
+    "version": "1.0",
+    "description": "Create a new invoice\n\n"
+  },
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/bill/add": {
+      "post": {
+        "summary": "Create a new invoice",
+        "operationId": "post-api-bill-add",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "Operations"
+        ],
+        "description": "Create a new invoice.",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "extOrderId": {
+                  "type": "string",
+                  "description": "unique bill ID from partner"
+                }
+              },
+              "required": [
+                "extOrderId"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "host": "gtest-open-api.lianlianpay-inc.com/api/bill/add"
+}
