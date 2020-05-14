@@ -18,7 +18,7 @@
   "paths": {
     "/api/bill/query": {
       "post": {
-        "summary": "",
+        "summary": "Get invoice by external bill ID",
         "operationId": "post-api-bill-query",
         "responses": {
           "200": {
