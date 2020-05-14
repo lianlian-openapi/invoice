@@ -28,7 +28,7 @@
               "properties": {
                 "code": {
                   "type": "string",
-                  "description": "default value is \"000000\""
+                  "description": ""
                 },
                 "data": {
                   "type": "object",
