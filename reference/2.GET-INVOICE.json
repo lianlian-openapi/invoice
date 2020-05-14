@@ -32,6 +32,7 @@
                 },
                 "data": {
                   "type": "object",
+                  "description": "response data",
                   "required": [
                     "billId",
                     "extOrderId",
@@ -57,7 +58,6 @@
                     "invoiceUrl",
                     "goodsInfoList"
                   ],
-                  "description": "response data",
                   "properties": {
                     "billId": {
                       "type": "string",
@@ -148,7 +148,7 @@
                       "description": "invoice URL "
                     },
                     "goodsInfoList": {
-                      "$ref": "./1.CREATE-INVOICE.json#/definitions/GoodsInfo"
+                      "$ref": "../GoodsInfo.json"
                     }
                   }
                 }

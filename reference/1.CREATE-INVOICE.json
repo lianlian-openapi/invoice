@@ -160,7 +160,7 @@
                   "type": "array",
                   "description": "goods information",
                   "items": {
-                    "$ref": "#/definitions/GoodsInfo"
+                    "$ref": "../GoodsInfo.json"
                   }
                 }
               },

@@ -1,0 +1,55 @@
+{
+  "title": "GoodsInfo",
+  "type": "object",
+  "properties": {
+    "goodsName": {
+      "type": "string",
+      "description": "name of goods"
+    },
+    "goodsNumber": {
+      "type": "string",
+      "description": "quantity of goods "
+    },
+    "goodsCurrency": {
+      "type": "string"
+    },
+    "goodsUnitPrice": {
+      "type": "string",
+      "description": "unit price of goods "
+    },
+    "goodsAmount": {
+      "type": "string",
+      "description": "total amount of goods"
+    },
+    "description": {
+      "type": "string",
+      "description": "description of goods "
+    }
+  },
+  "x-tags": [
+    "Models"
+  ],
+  "required": [
+    "description",
+    "goodsAmount",
+    "goodsUnitPrice",
+    "goodsCurrency",
+    "goodsNumber",
+    "goodsName"
+  ],
+  "description": "goods information",
+  "x-examples": {
+    "goods information": {
+      "goodsInfoList ": [
+        {
+          "goodsName": "vat_tax",
+          "goodsNumber": "1",
+          "goodsCurrency": "GBP",
+          "goodsUnitPrice": "100.00",
+          "goodsAmount": "100.00",
+          "description": "VAT tax due"
+        }
+      ]
+    }
+  }
+}
