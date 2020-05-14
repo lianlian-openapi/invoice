@@ -1,0 +1,23 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CALLBACK NOTIFICATION",
+    "version": "1.0",
+    "description": "|EventName |Summary|\n|---------|----------|\n|OPEN_API_BILL_EVENT|Payment result notification |"
+  },
+  "schemes": [],
+  "produces": [],
+  "consumes": [],
+  "paths": {
+    "": {
+      "get": {
+        "summary": "Your GET endpoint",
+        "tags": [],
+        "responses": {},
+        "operationId": "get-api"
+      },
+      "parameters": []
+    }
+  },
+  "definitions": {}
+}
