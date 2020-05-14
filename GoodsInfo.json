@@ -39,7 +39,7 @@
   ],
   "description": "goods information",
   "x-examples": {
-    "goods information": {
+    "goods information example": {
       "goodsInfoList ": [
         {
           "goodsName": "vat_tax",
