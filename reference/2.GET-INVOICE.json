@@ -237,6 +237,9 @@
             },
             "description": "The params of request body."
           }
+        ],
+        "tags": [
+          "API"
         ]
       }
     }
