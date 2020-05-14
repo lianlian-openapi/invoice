@@ -182,48 +182,6 @@
       }
     }
   },
-  "definitions": {
-    "GoodsInfo": {
-      "title": "GoodsInfo",
-      "type": "object",
-      "description": "Goods information",
-      "properties": {
-        "description": {
-          "type": "string",
-          "description": "description of goods "
-        },
-        "goodsAmount": {
-          "type": "string",
-          "description": "total amount of goods"
-        },
-        "goodsUnitPrice": {
-          "type": "string",
-          "description": "unit price of goods "
-        },
-        "goodsCurrency": {
-          "type": "string"
-        },
-        "goodsNumber": {
-          "type": "string",
-          "description": "quantity of goods "
-        },
-        "goodsName": {
-          "type": "string",
-          "description": "name of goods"
-        }
-      },
-      "required": [
-        "description",
-        "goodsAmount",
-        "goodsUnitPrice",
-        "goodsCurrency",
-        "goodsNumber",
-        "goodsName"
-      ],
-      "x-tags": [
-        "Models"
-      ]
-    }
-  },
+  "definitions": {},
   "host": "gtest-open-api.lianlianpay-inc.com"
 }
