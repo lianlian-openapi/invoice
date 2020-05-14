@@ -29,22 +29,18 @@
                   "type": "string"
                 },
                 "data": {
-                  "allOf": [
-                    {
-                      "properties": {
-                        "billId": {
-                          "type": "string"
-                        },
-                        "extOrderId": {
-                          "type": "string"
-                        },
-                        "invoiceUrl": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "properties": {
+                    "billId": {
+                      "type": "string"
+                    },
+                    "extOrderId": {
+                      "type": "string"
+                    },
+                    "invoiceUrl": {
+                      "type": "string"
                     }
-                  ],
-                  "type": "object"
+                  }
                 }
               }
             },
@@ -162,6 +158,7 @@
                 },
                 "goodsInfoList": {
                   "type": "array",
+                  "description": "goods information",
                   "items": {
                     "$ref": "#/definitions/GoodsInfo"
                   }
@@ -172,10 +169,11 @@
                 "userId",
                 "userName",
                 "currency",
-                "amount"
+                "amount",
+                "goodsInfoList"
               ]
             },
-            "description": ""
+            "description": "The params of request body."
           }
         ],
         "tags": [
@@ -227,5 +225,5 @@
       ]
     }
   },
-  "host": "gtest-open-api.lianlianpay-inc.com/api/bill/add"
+  "host": "gtest-open-api.lianlianpay-inc.com"
 }
