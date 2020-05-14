@@ -15,6 +15,38 @@
   "consumes": [
     "application/json"
   ],
-  "paths": {},
+  "paths": {
+    "/api/bill/query": {
+      "post": {
+        "summary": "",
+        "operationId": "post-api-bill-query",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "description": "Get invoice by external bill ID. ",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "extOrderId ": {
+                  "type": "string",
+                  "description": "external bill ID "
+                }
+              },
+              "required": [
+                "extOrderId "
+              ]
+            },
+            "description": "The params of request body."
+          }
+        ]
+      }
+    }
+  },
   "definitions": {}
 }
