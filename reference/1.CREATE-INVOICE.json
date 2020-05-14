@@ -133,7 +133,8 @@
                   "description": "IBAN, SORT, CIPS, ZENGIN, ABA; required if payment directly goes to bank account"
                 },
                 "bankRegion": {
-                  "$ref": "../docs/4.Data-Dictionary.md"
+                  "description": "required if payment directly goes to bank account. Please reference 'Data Dictionary'",
+                  "type": "string"
                 },
                 "rfb": {
                   "type": "string",
