@@ -195,6 +195,36 @@
                   ]
                 }
               }
+            },
+            "headers": {
+              "HTTP/1.1": {
+                "type": "string",
+                "required": true
+              },
+              "status": {
+                "type": "string",
+                "required": true
+              },
+              "Content-Type": {
+                "type": "string",
+                "required": true,
+                "default": "application/json",
+                "x-deprecated": true
+              },
+              "Content-Length": {
+                "type": "string",
+                "required": true
+              },
+              "Connection": {
+                "type": "string",
+                "required": true,
+                "default": "keep-alive",
+                "x-deprecated": true
+              },
+              "LLPAY-Signature": {
+                "type": "string",
+                "required": true
+              }
             }
           },
           "402": {
@@ -214,6 +244,36 @@
               "Failed example": {
                 "code": "999995",
                 "message": "[extOrderId] can't be empty."
+              }
+            },
+            "headers": {
+              "HTTP/1.1": {
+                "type": "string",
+                "required": true
+              },
+              "status": {
+                "type": "string",
+                "required": true
+              },
+              "Content-Type": {
+                "type": "string",
+                "required": true,
+                "default": "application/json",
+                "x-deprecated": true
+              },
+              "Content-Length": {
+                "type": "string",
+                "required": true
+              },
+              "Connection": {
+                "type": "string",
+                "required": true,
+                "default": "keep-alive",
+                "x-deprecated": true
+              },
+              "LLPAY-Signature": {
+                "type": "string",
+                "required": true
               }
             }
           }

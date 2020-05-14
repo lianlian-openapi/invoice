@@ -53,6 +53,36 @@
                   "invoiceUrl": "https://invoicebuilder.lianlianpay.com/bill/info?billId=9hrsN32RuN9g3CI6H8gX48Meg"
                 }
               }
+            },
+            "headers": {
+              "HTTP/1.1": {
+                "type": "string",
+                "required": true
+              },
+              "status": {
+                "type": "string",
+                "required": true
+              },
+              "Content-Type": {
+                "type": "string",
+                "required": true,
+                "default": "application/json",
+                "x-deprecated": true
+              },
+              "Content-Length": {
+                "type": "string",
+                "required": true
+              },
+              "Connection": {
+                "type": "string",
+                "required": true,
+                "default": "keep-alive",
+                "x-deprecated": true
+              },
+              "LLPAY-Signature": {
+                "type": "string",
+                "required": true
+              }
             }
           },
           "402": {
@@ -72,6 +102,36 @@
               "Faild example": {
                 "code": "999995",
                 "message": "[userId] can't be empty."
+              }
+            },
+            "headers": {
+              "HTTP/1.1": {
+                "type": "string",
+                "required": true
+              },
+              "status": {
+                "type": "string",
+                "required": true
+              },
+              "Content-Type": {
+                "type": "string",
+                "required": true,
+                "default": "application/json",
+                "x-deprecated": true
+              },
+              "Content-Length": {
+                "type": "string",
+                "required": true
+              },
+              "Connection": {
+                "type": "string",
+                "required": true,
+                "default": "keep-alive",
+                "x-deprecated": true
+              },
+              "LLPAY-Signature": {
+                "type": "string",
+                "required": true
               }
             }
           }
