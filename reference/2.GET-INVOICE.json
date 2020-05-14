@@ -77,7 +77,7 @@
                     },
                     "currency": {
                       "type": "string",
-                      "description": "currency of bill "
+                      "description": "currency of bill.Please reference 'Data Dictionary'."
                     },
                     "amount": {
                       "type": "string",
@@ -113,7 +113,7 @@
                     },
                     "bankRegion": {
                       "type": "string",
-                      "description": "required if payment directly goes to bank account. "
+                      "description": "required if payment directly goes to bank account. Please reference 'Data Dictionary'."
                     },
                     "rfb": {
                       "type": "string",
