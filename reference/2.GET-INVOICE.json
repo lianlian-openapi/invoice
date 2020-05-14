@@ -27,7 +27,8 @@
               "type": "object",
               "properties": {
                 "code": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "default value is \"000000\""
                 },
                 "data": {
                   "type": "object",
@@ -197,10 +198,17 @@
             }
           },
           "402": {
-            "description": "Payment Required",
+            "description": "|HTTP Code | Code | Summary|\n|---------|----------|----------|\n |402 | 999995  |Invalid Parameter. Returned message such as: “[extOrderId] can't be empty.”|\n |402 | 171001   |The bill does not exist.|",
             "schema": {
               "type": "object",
-              "properties": {}
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
             }
           }
         },
