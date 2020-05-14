@@ -290,12 +290,12 @@
             "x-deprecated": false
           },
           {
-            "type": "string",
             "in": "header",
             "name": "POST",
             "required": true,
             "default": "/api/bill/add HTTP/1.1",
-            "x-deprecated": true
+            "x-deprecated": true,
+            "type": "string"
           }
         ],
         "tags": [
