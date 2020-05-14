@@ -31,80 +31,167 @@
                 },
                 "data": {
                   "type": "object",
+                  "required": [
+                    "billId",
+                    "extOrderId",
+                    "userId",
+                    "userName",
+                    "currency",
+                    "amount",
+                    "bankAccount",
+                    "swiftCode",
+                    "accountName",
+                    "bankName",
+                    "bankCode",
+                    "payEndTime",
+                    "bankType",
+                    "bankRegion",
+                    "rfb",
+                    "memo",
+                    "payerEmail",
+                    "payerPhone",
+                    "status",
+                    "createTime",
+                    "modifyTime ",
+                    "invoiceUrl",
+                    "goodsInfoList"
+                  ],
+                  "description": "response data",
                   "properties": {
                     "billId": {
-                  "type": "string",
-                  "description": "ID of bill generated"
-                },
-                "extOrderId": {
-                  "type": "string",
-                  "description": "unique bill ID from partner"
-                },
-                "userId": {
-                  "type": "string",
-                  "description": "user ID from partner system"
-                },
-                "userName": {
-                  "type": "string",
-                  "description": "user name from partner system "
-                },
-                "currency": {
-                  "type": "string",
-                  "description": "currency of bill "
-                },
-                "amount": {
-                  "type": "string",
-                  "description": "amount of bill "
-                },
-                "bankAccount": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank account "
-                },
-                "swiftCode": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank account "
-                },
-                "accountName": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank account "
-                },
-                "bankName": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank account "
-                },
-                "bankCode": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank \naccount and bank type is not IBAN. \n1. No need to enter if bank type is IBAN; \n2. Enter SortCode if bank type is SORT; \n3. Enter bank code if bank type is CIPS,ZENGIN,ABA. "
-                },
-                "payEndTime": {
-                  "type": "string",
-                  "description": "due date in ISO 8601 date time format.\n\ne.g. 2019-11-19T17:12:43.083Z "
-                },
-                "bankType": {
-                  "type": "string",
-                  "description": "IBAN, SORT, CIPS, ZENGIN, ABA; required if payment directly goes to bank account"
-                },
-                "bankRegion": {
-                  "type": "string",
-                  "description": "required if payment directly goes to bank account. "
-                },
-                "rfb": {
-                  "type": "string",
-                  "description": "reference for beneficiary "
-                },
-                "memo": {
-                  "type": "string",
-                  "description": "remarks information "
-                },
-                "payerEmail": {
-                  "type": "string",
-                  "description": "payer’s email"
-                },
-                "payerPhone": {
-                  "type": "string",
-                  "description": "payer’s phone"
-                }
+                      "type": "string",
+                      "description": "ID of bill generated"
+                    },
+                    "extOrderId": {
+                      "type": "string",
+                      "description": "unique bill ID from partner"
+                    },
+                    "userId": {
+                      "type": "string",
+                      "description": "user ID from partner system"
+                    },
+                    "userName": {
+                      "type": "string",
+                      "description": "user name from partner system "
+                    },
+                    "currency": {
+                      "type": "string",
+                      "description": "currency of bill "
+                    },
+                    "amount": {
+                      "type": "string",
+                      "description": "amount of bill "
+                    },
+                    "bankAccount": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank account "
+                    },
+                    "swiftCode": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank account "
+                    },
+                    "accountName": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank account "
+                    },
+                    "bankName": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank account "
+                    },
+                    "bankCode": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank \naccount and bank type is not IBAN. \n1. No need to enter if bank type is IBAN; \n2. Enter SortCode if bank type is SORT; \n3. Enter bank code if bank type is CIPS,ZENGIN,ABA. "
+                    },
+                    "payEndTime": {
+                      "type": "string",
+                      "description": "due date in ISO 8601 date time format.\n\ne.g. 2019-11-19T17:12:43.083Z "
+                    },
+                    "bankType": {
+                      "type": "string",
+                      "description": "IBAN, SORT, CIPS, ZENGIN, ABA; required if payment directly goes to bank account"
+                    },
+                    "bankRegion": {
+                      "type": "string",
+                      "description": "required if payment directly goes to bank account. "
+                    },
+                    "rfb": {
+                      "type": "string",
+                      "description": "reference for beneficiary "
+                    },
+                    "memo": {
+                      "type": "string",
+                      "description": "remarks information "
+                    },
+                    "payerEmail": {
+                      "type": "string",
+                      "description": "payer’s email"
+                    },
+                    "payerPhone": {
+                      "type": "string",
+                      "description": "payer’s phone"
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": "WAIT_FOR_PAYMENT,SUCCESSFUL_PAID,OVERDUE "
+                    },
+                    "createTime": {
+                      "type": "string",
+                      "description": "date values in ISO 8601 date time format.\n\ne.g. 2019-11-19T17:12:43.083Z "
+                    },
+                    "modifyTime ": {
+                      "type": "string",
+                      "description": "the last modified time in ISO 8601 date time format.\n \ne.g. 2019-11-19T17:12:43.083Z "
+                    },
+                    "invoiceUrl": {
+                      "type": "string",
+                      "description": "invoice URL "
+                    },
+                    "goodsInfoList": {
+                      "$ref": "./1.CREATE-INVOICE.json#/definitions/GoodsInfo"
+                    }
                   }
+                }
+              },
+              "required": [
+                "code",
+                "data"
+              ]
+            },
+            "examples": {
+              "success example": {
+                "code": "000000",
+                "data": {
+                  "billId": "54643563242",
+                  "extOrderId": "201908200742129",
+                  "userId": "786476571",
+                  "userName": "Tom",
+                  "currency": "GBP",
+                  "amount": "100.00",
+                  "bankAccount": "xxxxxxxxx ",
+                  "swiftCode": "BARCGB22 ",
+                  "accountName": "HMRC VAT ",
+                  "bankName": "Barclays BankPLC",
+                  "bankCode": "200517",
+                  "payEndTime": "2019-08-29T11: 06.378 Z",
+                  "bankType": "SORT",
+                  "bankRegion": "GB",
+                  "rbf ": "reference_for_beneficiary",
+                  "memo": "Tom",
+                  "payerEmail": "xxxxxxx@lianlianpay.com",
+                  "payerPhone": "13600000000",
+                  "status": "WAIT_FOR_PAYMENT",
+                  "createTime": "2019-08-22T11:06.378Z",
+                  "modifyTime": "2019-08-22T11: 06.378 Z ",
+                  "goodsInfoList ": [
+                    {
+                      "goodsName": "vat_tax",
+                      "goodsNumber": "1",
+                      "goodsCurrency": "GBP",
+                      "goodsUnitPrice": "100.00",
+                      "goodsAmount": "100.00",
+                      "description": "VAT tax due"
+                    }
+                  ]
                 }
               }
             }
