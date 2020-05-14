@@ -22,7 +22,99 @@
         "operationId": "post-api-bill-query",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "billId": {
+                  "type": "string",
+                  "description": "ID of bill generated"
+                },
+                "extOrderId": {
+                  "type": "string",
+                  "description": "unique bill ID from partner"
+                },
+                "userId": {
+                  "type": "string",
+                  "description": "user ID from partner system"
+                },
+                "userName": {
+                  "type": "string",
+                  "description": "user name from partner system "
+                },
+                "currency": {
+                  "type": "string",
+                  "description": "currency of bill "
+                },
+                "amount": {
+                  "type": "string",
+                  "description": "amount of bill "
+                },
+                "bankAccount": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank account "
+                },
+                "swiftCode": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank account "
+                },
+                "accountName": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank account "
+                },
+                "bankName": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank account "
+                },
+                "bankCode": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank \naccount and bank type is not IBAN. \n1. No need to enter if bank type is IBAN; \n2. Enter SortCode if bank type is SORT; \n3. Enter bank code if bank type is CIPS,ZENGIN,ABA. "
+                },
+                "payEndTime": {
+                  "type": "string",
+                  "description": "due date in ISO 8601 date time format.\n\ne.g. 2019-11-19T17:12:43.083Z "
+                },
+                "bankType": {
+                  "type": "string",
+                  "description": "IBAN, SORT, CIPS, ZENGIN, ABA; required if payment directly goes to bank account"
+                },
+                "bankRegion": {
+                  "type": "string",
+                  "description": "required if payment directly goes to bank account. "
+                },
+                "rfb": {
+                  "type": "string",
+                  "description": "reference for beneficiary "
+                },
+                "memo": {
+                  "type": "string",
+                  "description": "remarks information "
+                },
+                "payerEmail": {
+                  "type": "string",
+                  "description": "payer’s email"
+                },
+                "payerPhone": {
+                  "type": "string",
+                  "description": "payer’s phone"
+                }
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment Required",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
           }
         },
         "description": "Get invoice by external bill ID. ",
