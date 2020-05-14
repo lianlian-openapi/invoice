@@ -1,0 +1,20 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "2.GET-INVOICE",
+    "version": "1.0",
+    "description": "Get invoice by external bill ID. "
+  },
+  "host": "https://gtest-open-api.lianlianpay-inc.com",
+  "schemes": [
+    "https"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {},
+  "definitions": {}
+}
