@@ -209,6 +209,12 @@
                   "type": "string"
                 }
               }
+            },
+            "examples": {
+              "Invalid Parameter": {
+                "code": "999995",
+                "message": "[extOrderId] can't be empty."
+              }
             }
           }
         },
