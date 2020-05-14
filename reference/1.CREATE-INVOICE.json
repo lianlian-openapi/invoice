@@ -98,7 +98,7 @@
                 },
                 "currency": {
                   "type": "string",
-                  "description": "currency of bill "
+                  "description": "currency of bill.Please reference 'Data Dictionary'."
                 },
                 "amount": {
                   "type": "string",
