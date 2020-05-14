@@ -69,7 +69,7 @@
               }
             },
             "examples": {
-              "Invalid Parameter": {
+              "Faild example": {
                 "code": "999995",
                 "message": "[userId] can't be empty."
               }
