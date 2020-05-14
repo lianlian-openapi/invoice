@@ -21,12 +21,65 @@
         "operationId": "post-api-bill-add",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Success",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "data": {
+                  "allOf": [
+                    {
+                      "properties": {
+                        "billId": {
+                          "type": "string"
+                        },
+                        "extOrderId": {
+                          "type": "string"
+                        },
+                        "invoiceUrl": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "examples": {
+              "success example": {
+                "code": "000000",
+                "data": {
+                  "extOrderId": "201908200742129",
+                  "billId": "201908221466425",
+                  "invoiceUrl": "https://invoicebuilder.lianlianpay.com/bill/info?billId=9hrsN32RuN9g3CI6H8gX48Meg"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "|HTTP Code | Code | Summary|\n|---------|----------|----------|\n |402 | 999995  |Invalid Parameter. Returned message such as: “[userId] can't be empty.”|\n |402 | 171003  |The extOrderId already exists.|\n |402 | 171004  |The configuration for the platform does not exist.|",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
+            },
+            "examples": {
+              "Invalid Parameter": {
+                "code": "999995",
+                "message": "[userId] can't be empty."
+              }
+            }
           }
         },
-        "tags": [
-          "Operations"
-        ],
         "description": "Create a new invoice.",
         "parameters": [
           {
@@ -124,6 +177,9 @@
             },
             "description": ""
           }
+        ],
+        "tags": [
+          "API"
         ]
       }
     }
@@ -165,6 +221,9 @@
         "goodsCurrency",
         "goodsNumber",
         "goodsName"
+      ],
+      "x-tags": [
+        "Models"
       ]
     }
   },
