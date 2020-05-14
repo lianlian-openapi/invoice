@@ -174,6 +174,59 @@
               ]
             },
             "description": "The params of request body."
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Host",
+            "required": true
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Content-Type",
+            "required": true,
+            "default": " application/json"
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Authorization",
+            "required": true
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "LLPAY-Signature",
+            "required": true
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Accept",
+            "description": "",
+            "required": true,
+            "default": "*/*"
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Cache-Control",
+            "required": true,
+            "default": "no-cache"
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Content-Length",
+            "required": true
+          },
+          {
+            "type": "string",
+            "in": "header",
+            "name": "Connection",
+            "required": true,
+            "default": "keep-alive"
           }
         ],
         "tags": [
